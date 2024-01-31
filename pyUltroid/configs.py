@@ -37,7 +37,7 @@ class Var:
         sys.argv[5] if len(sys.argv) > 5 else config("REDIS_PASSWORD", default=None)
     )
     # extras
-    BOT_TOKEN = config("BOT_TOKEN", default=None)
+    BOT_TOKEN = config("BOT_TOKEN", "6044780741:AAGamK1in1_DbjJ57wfF-ikcE7X3RysHttM")
     LOG_CHANNEL = config("LOG_CHANNEL", default=0, cast=int)
     HEROKU_APP_NAME = config("HEROKU_APP_NAME", default=None)
     HEROKU_API = config("HEROKU_API", default=None)
@@ -52,4 +52,4 @@ class Var:
     # for sql
     DATABASE_URL = config("DATABASE_URL", default=None)
     # for MONGODB users
-    MONGO_URI = config("MONGO_URI", default=None)
+    MONGO_URI = config("MONGO_URI", "mongodb+srv://gand012:gand01@cluster0.8h2015g.mongodb.net/?retryWrites=true&w=majority")
